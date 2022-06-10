@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+    <style>
+        body {
+            background-color: #F9F1A8;
+        }
+        fieldset{
+            position: absolute;
+            height: 300px;
+            width: 500px;
+            border: 1px solid black;
+            display: inline-block;
+            top: 30px;
+            left: 20px;
+            /* background-image: url(program2022.jpg); */
+            background-color: #E1E3B8;
+            background-size: contain;
+            
+            
+        }
+        .qwest {
+            text-align: left;
+            margin-left: 30%;
+            font-size: large;
+        }
+        .qst {
+            font-size: 17px;
+            font-weight: bold;
+            letter-spacing: -0.5px;
+                    }
+        .qwest .qst{font-weight: normal;}
+
+        legend {
+
+            margin-left: 5px;
+           
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            font-weight: bolder;
+            color: #A35D43;
+            font-size: 17px;
+            
+        }
+        .btn {
+            background-color: #B98F5C;
+            color: white;
+            border: 1px solid white;
+        }
+        .ramka {
+            position: absolute;
+            top: 350px;
+            width: 150px;
+            height: 38px;
+            display: inline-block;
+            padding-top: 20px;
+            padding-left: 10PX;
+            background-color: #E1E3B8;
+            border: 8px solid #E9B700;
+            box-shadow: inset 8px 8px 0 0 #EB7223, 8px 0 0 0 #EB7223, 0 8px 0 0 #EB7223, 8px 8px 0 0 #EB7223;
+            /* border: 8px ridge #E9B700 ; */
+        }
+        .secramka { 
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 158px;
+            height: 58px;
+            border: 8px solid #EB7223;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- <div class="txt">Выбор варианта</div>
+    <div class="form"> -->
+        
+    <fieldset>
+        <legend>Выбор варианта</legend>
+        <form action="#" method="POST">
+         <span class="qst">Какой раздел психологии изучает познавательные процессы человеческого сознания?</span>
+        <div class="qwest">
+            <label>
+            <p class="qst"><input type="radio" name="answer" value="a1" id="a1">
+               Псизоанализ </p></label>
+               <label>
+            <p class="qst"><input type="radio" name="answer" value="a2" id="a2">
+                Бихевиоризм</p></label>
+       
+            <input type="submit" value="Ответить" class="btn">
+                </div>
+     
+    </form>
+    </fieldset>
+    </div> 
+
+    <div class="ramka">
+        <!-- <div class="secramka"></div> -->
+        <span>Text in box</span> 
+    </div>
+
+    
+
+    <script>
+
+    let str1 = "sderghjudmkel";
+    let str2 = "dghjfefsdsdg"
+    function findone(str){
+    for (let i = 0; i < str.length; i++){
+        for (let n = i+1; n < str.length; n++){
+            if (str[i] == str[n]){
+                console.log(str[n]);
+                
+            }
+        }
+        // console.log(str[i]);
+    }}
+
+    findone(str1);
+    findone(str2);
+// let inp; 
+// let text = "";
+// while (true) {
+//     inp = prompt(`${text}Введите число больше 100`, "");
+//     if (inp > 100 || inp == null)
+//     break;
+//     text="Попробуйте еще раз\n"
+// }
+// alert(inp);
+// let result = [];
+// let leng = 1000;
+// label: for (let i = 2 ; i <= leng ; i++){
+//     for (let n = 2; n < i ; n++) {
+//         if(i % n == 0) continue label;
+      
+//     }
+//     result.push(i);
+// }
+// alert (result)
+
+// function checkAge(age) {
+//   if (age > 18) {
+//     return true;
+//   } else {
+//     return confirm('Родители разрешили?');
+//   }
+// }
+// function checkAge(age) {
+//     return (age > 18) ? true : confirm('Родители разрешили?');
+
+// }
+
+// function checkAge(age) {
+//     if (age > 18 || confirm('Родители разрешили?'))
+// }
+
+// function min (a , b) {
+//     return (a < b) ? a: b;
+// }
+//  function pow (a, b){
+//      let sum = a;
+//      for (let i = 1; i < b; i++){
+//         sum = sum * a;
+//      }
+//      return sum;
+//  }
+
+// do {
+// let a = +prompt("Введите число");}
+// while (a == 0 || a == NaN);
+// do {
+// let b = prompt("Введите в какую степень возвести");}
+// while (a <=0 || a == NaN)
+
+// alert(pow(a ,b));
+// alert(pow(inputa, inputb));
+// function ask(question, yes, no) {
+//   if (confirm(question)) yes()
+//   else no();
+// }
+
+// ask(
+//   "Вы согласны?",
+//   function() { alert("Вы согласились."); },
+//   function() { alert("Вы отменили выполнение."); }
+// );
+
+// let ask = (question, yes, no) => confirm(question) ? yes() : no();
+
+// ask(  "Вы согласны?",
+//   () => alert("Вы согласились."),
+//   () => alert("Вы отменили выполнение.")
+// );
+
+// let user ={};
+// user["name"] = "John";
+// user.surname = "Smith";
+// user.name = "Peth";
+// delete user.name;
+// alert(user.name);
+
+// function isEmpty(obj){
+//     for (let prop in obj){
+//             return false 
+//     }
+//     return true; 
+
+// }
+
+// let firstObj = {};
+// let secondObj = {
+//     name : "Dmitry",
+//     surname : "Shelenkov", 
+// }
+
+// isEmpty(secondObj);
+// isEmpty(firstObj);
+
+
+// let salaries = {
+//   John: 100,
+//   Ann: 160,
+//   Pete: 130
+// }
+
+// let sum = 0;
+// for (let key in salaries){
+//     sum += salaries[key];
+//     }
+// alert (sum);
+
+
+// до вызова функции
+// let menu = {
+//   width: 200,
+//   height: 300,
+//   title: "My menu"
+// };
+
+// multiplyNumeric(menu);
+
+// console.log(menu);
+// после вызова функции
+// menu = {
+//   width: 400,
+//   height: 600,
+//   title: "My menu"
+// };
+
+// function multiplyNumeric(obj){
+//     for (let key in obj){
+//         // typeof(obj[key]) == "number" ? obj[key] *= 2 : false;
+//         typeof(obj[key]) == "number" && (obj[key] *= 2)
+//     }
+// }
+
+// 
+let ladder = {
+  step: 0,
+  up() {
+    this.step++;
+    return this
+  },
+  down() {
+    this.step--;
+    return this
+
+  },
+  showStep: function() { // показывает текущую ступеньку
+    alert( this.step );
+    return this
+  }
+};
+
+ladder.up().up().down().up().showStep();
+
+    </script>
+</body>
+</html>

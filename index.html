@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window</title>
+    <style>
+
+
+  
+
+.block::before {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  height: 44px;
+  width: 221px;
+  top: 3px;
+  left: -3px;
+  background-color: #008000;
+}
+.block {
+  background-color: #008000;
+  z-index: 10000000;
+  width: 200px;
+  height: 50px;
+  margin: 50px;
+  color: #fff;
+  text-align: left;
+  line-height: 50px;
+  padding-left: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.buttn{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    padding: 5px 50px;
+    border-radius: 40px;
+    background: linear-gradient(#f8b4e7 0%, #f8b4e7 20%,
+    #f7d1ed 50%, #f8b4e7 80%);
+    border: 6px double white;
+    box-shadow: 0 0 15px #c7c3c3;
+        
+
+}
+.buttn1{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    padding: 5px 50px;
+    border-radius: 40px;
+    background: radial-gradient(#7a1a45 0%, #ffb7d8 20%,
+    #ffc7e0 50%, #ffb7d8 80%, #722146 100%);
+    border: 6px double white;
+    box-shadow: 0 0 15px #c7c3c3;
+     
+
+}
+
+.simpbut {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background: linear-gradient(#03BCD9 0%, #E3FDFE 100%);
+    border: 2px solid black;
+    /* box-shadow: 0 0 15px #c7c3c3; */
+}
+.vypbut {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background: linear-gradient(#49EF63 0%, #39B84D 50%, #49EF63 100%);
+    border: 2px solid black;
+    /* box-shadow: 0 0 15px #c7c3c3; */
+}
+.anvypbut {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    background: linear-gradient( #D6EEF3 0%,  #03BCD9 100%);
+    padding: 8px 18px;
+    margin-top: 5px;
+}
+.webbut {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    color: white;
+    border: 4px solid #666666;
+    border-radius: 8px;
+    background: linear-gradient( #FFFFFF 0%,  #232323 100%);
+    padding: 8px 18px;
+    margin-top: 5px;
+    
+}
+.vdbut {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    color: black;
+    border: 4px inset #f1f1f1;
+    border-radius: 8px;
+    background: linear-gradient( #E8E8E9 0%,  #C2C2C3 100%);
+    padding: 8px 18px;
+    margin-top: 5px;
+    
+}
+    </style>
+</head>
+<body>
+  
+    
+<div class="block">Text</div>
+<br>
+
+<div class="buttn">Кнопка</div>
+
+<div class="buttn1">Кнопка</div>
+<br>
+
+<div class="simpbut">Простой градиент</div>
+<div class="vypbut">Выпуклая кнопка</div>
+<br>
+<div class="anvypbut">Другая выпуклая кнопка</div>
+<div class="webbut">Кнопка в стиле Веб 2.0</div>
+<br>
+<div class="vdbut">Вдавленная кнопка</div>
+
+</body>
+</html>
