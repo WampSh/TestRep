@@ -259,24 +259,54 @@
 // }
 
 // 
-let ladder = {
-  step: 0,
-  up() {
-    this.step++;
-    return this
-  },
-  down() {
-    this.step--;
-    return this
+// let ladder = {
+//   step: 0,
+//   up() {
+//     this.step++;
+//     return this
+//   },
+//   down() {
+//     this.step--;
+//     return this
 
-  },
-  showStep: function() { // показывает текущую ступеньку
-    alert( this.step );
-    return this
-  }
-};
+//   },
+//   showStep: function() { // показывает текущую ступеньку
+//     alert( this.step );
+//     return this
+//   }
+// };
 
-ladder.up().up().down().up().showStep();
+// ladder.up().up().down().up().showStep();
+
+let calculator = new Calculator();
+let seccalc = new Calculator();
+calculator.read();
+
+alert( "Sum=" + calculator.sum() );
+alert( "Mul=" + calculator.mul() );
+alert( "Sum=" + seccalc.sum() );
+
+function Calculator(){
+    let a, b = 0; 
+    this.read = () => {
+        a = +prompt ("Input A");
+        b = +prompt ("input B");} 
+    this.sum = function () {return a + b};
+    this.mul = function () {return a * b};
+}
+
+// let accumulator = new Accumulator(5); // начальное значение 1
+
+// accumulator.read(); // прибавит ввод prompt к текущему значению
+// accumulator.read(); // прибавит ввод prompt к текущему значению
+
+// alert(accumulator.value); // выведет сумму этих значений
+
+// function Accumulator(startingValue){
+//     this.value = startingValue;
+//     this.read = () => {this.value += +prompt("Input number", 0);
+//     }
+// }
 
     </script>
 </body>
